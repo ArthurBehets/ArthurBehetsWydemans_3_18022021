@@ -1,0 +1,19 @@
+{
+  "name": "arthurbehetswydemans_3_18022021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurBehets/ArthurBehetsWydemans_3_180220211.git"
+  },
+  "author": "Behets Wydemans Arthur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArthurBehets/ArthurBehetsWydemans_3_180220211/issues"
+  },
+  "homepage": "https://github.com/ArthurBehets/ArthurBehetsWydemans_3_180220211#readme"
+}
