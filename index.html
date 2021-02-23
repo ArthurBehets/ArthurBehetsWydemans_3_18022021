@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset ="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <!-- css -->
         <link rel="stylesheet" href="css/style.css">
         <!-- Fontawesome-->
@@ -8,87 +9,58 @@
     </head>
     <body>
         <header>
-            <img src="img/logo/ohmyfood.png" alt="logo Oh my food">
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Paris, Belleville</p>
+            <img src="img/logo/ohmyfood.png" alt="logo Oh my food" class="header__img">
+            <div class="localisation">
+                <i class="fas fa-map-marker-alt localisation__icon"></i>
+                <p class="localisation__p">Paris, Belleville</p>
             </div>
-            <div>
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurant d'exeption, sélectionnés par nos soins.</p>
-                <a>Explorez nos restaurant</a>
+            <div class="intro">
+                <h1 class="intro__title">Réservez le menu qui vous convient</h1>
+                <p class="intro__subtitle">Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
+                <a class="intro__link">Explorez nos restaurants</a>
             </div>
         </header>
         <!-- Utilisation -->
-        <section>
-            <h2>
+        <section class="utilisation">
+            <h2 class="utilisation__title">
                 Fonctionnement
             </h2>
-            <a>
-                <p>1</p>
-                <i class="fas fa-mobile-alt"></i>
-                <p>Choisissez un restaurant</p>
+            <!-- 1 -->
+            <a class="utilisation__link">
+                <p class="utilisation__link__number">1</p>
+                <p class="utilisation__link__p">
+                    <i class="fas fa-mobile-alt utilisation__link__p-i"></i>
+                    Choisissez un restaurant
+                </p>
             </a>
-            <a>
-                <p>2</p>
-                <i class="fas fa-ellipsis-v"></i>
-                <i class="fas fa-bars"></i>
-                <p>Composez votre menu</p>
+            <!-- 2 -->
+            <a class="utilisation__link">
+                <p class="utilisation__link__number">2</p>
+                <p class="utilisation__link__p">
+                    <i class="fas fa-ellipsis-v utilisation__link__p-i utilisation__link__p-i-points"></i>
+                    <i class="fas fa-bars utilisation__link__p-i"></i>
+                    Composez votre menu
+                </p>
             </a>
-            <a>
-                <p>3</p>
-                <i class="fas fa-store"></i>
-                <p>Dégustez au restaurant</p>
+            <!-- 3 -->
+            <a class="utilisation__link">
+                <p class="utilisation__link__number">3</p>
+                <p class="utilisation__link__p">
+                    <i class="fas fa-store utilisation__link__p-i"></i>
+                    Dégustez au restaurant
+                </p>
             </a>
         </section>
-        <section>
+        <section class="restaurants">
             <h3>Restaurants</h3>
-            <a>
-                <img>
-                <div>
-                    <div>
+            <a class="restaurant">
+                <img class="restaurant__img" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant">
+                <div class="restaurant__etiquette">
+                    <div class="restaurant__etiquette-txt">
                         <p>La palette du goût</p>
                         <p>Menilmontant</p>
                     </div>
-                    <a>
-                        <i class="far fa-heart"></i>
-                    </a>
-                </div>
-            </a>
-            <a>
-                <img>
-                <div>
-                    <div>
-                        <p>La note enchentée</p>
-                        <p>Charonne</p>
-                    </div>
-                    <a>
-                        <i class="far fa-heart"></i>
-                    </a>
-                </div>
-            </a>
-            <a>
-                <img>
-                <div>
-                    <div>
-                        <p>A la française</p>
-                        <p>Cité rouge</p>
-                    </div>
-                    <a>
-                        <i class="far fa-heart"></i>
-                    </a>
-                </div>
-            </a>
-            <a>
-                <img>
-                <div>
-                    <div>
-                        <p>Le délice des sens</p>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                    <a>
-                        <i class="far fa-heart"></i>
-                    </a>
+                    <i class="far fa-heart"></i>
                 </div>
             </a>
         </section>
