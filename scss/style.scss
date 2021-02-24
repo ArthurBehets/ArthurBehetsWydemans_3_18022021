@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5{
 h1{
     font-weight: bolder;
 }
+
 /* Main version (smartphone) */
 
 /*Header*/
@@ -33,7 +34,7 @@ header{
     display: flex;
     flex-direction: column;
     .header__img{
-        width : 30%;
+        width : 40%;
         margin: auto;
     }
 }
@@ -51,6 +52,7 @@ header{
         margin-top:auto;
         margin-bottom: auto;
         margin-right: 10px;
+        font-size: 15px;
     }
     &__p{
         margin-top:auto;
@@ -147,26 +149,90 @@ header{
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
+    & h2{
+        margin-left: 15px;
+    }
 }
 
 .restaurant{
     display :flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin-left: 10%;
+    margin-bottom: 20px;
+    &:hover .restaurant__etiquette{
+        box-shadow: 3px 3px rgba(0,0,0,0.07);
+    }
     &__img{
-        width : 330px;
+        width : 90%;
         height : 175px;
-        object-fit: content;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    &__nouveau{
+        background-color:$third;
+        position: absolute;
+        margin-left: 70%;
+        margin-top: 20px;
+        color : #269d80;
+        padding :5px;
     }
     &__etiquette{
         background-color: white;
         border-radius: 0 0 20px 20px;
-        width : 330px;
+        width : 90%;
         display: flex;
         justify-content: space-between;
+        box-shadow: 3px 3px rgba(0,0,0,0.02);
         &-txt{
-            margin-left : 15px;
+            margin-left : 5%;
+            padding-right: 30px;
+        }
+        &-i{
+            position : absolute;
+            left : 75%;
+            margin-top: 20px;
+            font-size: 25px;
+            z-index: 1;
+            &:active{
+                background: linear-gradient(to bottom right, $primary, $secondary);
+                -webkit-background-clip: text;
+	            -webkit-text-fill-color: transparent;
+                &+.far{
+                    display: none;
+                }
+            }
         }
     }
+}
+
+.hidden{
+    color : rgba(0,0,0,0);
+    z-index: 2;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    padding : 20px;
+    &__logo{
+        height : 30px;
+    }
+    &__p{
+        color :white;
+        display: flex;
+        flex-direction: row;
+        &-i{
+            margin-right: 10px;
+            font-size : 15px;
+        }
+    }
+}
+
+.fa-handshake{
+    margin-right: 5px;
 }
