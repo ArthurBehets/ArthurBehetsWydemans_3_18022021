@@ -11,6 +11,7 @@ body {
   font-family: shrikand;
   margin: 0;
   width: 100%;
+  overflow: unset;
 }
 
 h1, h2, h3, h4, h5 {
@@ -104,26 +105,28 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
   margin-left: 10%;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
 }
 .plateCategory__title {
   font-size: large;
   color: #1e1e1e;
   display: flex;
   flex-direction: column;
+  margin-left: 1%;
 }
 .plateCategory__title__bar {
   margin: 0;
   border-top: 3.5px solid #99E2D0;
   width: 40px;
+  margin-left: 1%;
 }
 .plateCategory__infos {
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding-left: 5%;
   border-radius: 20px;
-  width: 80%;
+  width: 90%;
   margin-bottom: 40px;
   justify-content: space-between;
 }
@@ -179,11 +182,11 @@ h1, h2, h3, h4, h5 {
   }
 
   .plates {
-    height: 1750px;
+    height: 1850px;
   }
 
   .footer {
-    margin-top: 1700px;
+    margin-top: 1800px;
   }
 }
 @media (min-width: 480px) and (max-width: 778px) {
