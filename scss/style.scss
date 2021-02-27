@@ -34,7 +34,7 @@ header{
     display: flex;
     flex-direction: column;
     .header__img{
-        width : 40%;
+        width : 45%;
         margin: auto;
     }
 }
@@ -47,7 +47,7 @@ header{
     width : 100%;
     margin-top: 40px;
     height : 50px;
-    box-shadow: 0px -3px 0 3px linear-gradient(black, #eaeaea);
+    box-shadow: 0px -2px 0 2px rgba(0,0,0,0.1);
     &__icon{
         margin-top:auto;
         margin-bottom: auto;
@@ -87,13 +87,12 @@ header{
         font-size: x-large;
         color: white;
         padding : 30px;
-        padding-bottom: 5px;
-        padding-top: 20px;
+        padding-bottom: 15px;
+        padding-top: 17px;
         border-radius: 60px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        height :50px;
         margin-bottom: 70px;
     }
 }
@@ -104,8 +103,10 @@ header{
     flex-direction: column;
     margin : 15px;
     margin-bottom: 75px;
+    margin-left: 10%;
     &__title{
         font-size: 25px;
+        width : 100%;
     }
     &__link{
         display: flex;
@@ -117,16 +118,24 @@ header{
             box-shadow: 2px 2px rgba(0,0,0,0.1);
             padding : 17px;
             border-radius: 12px;
-            width : 80%;
+            width : 83%;
             text-align: center;
             margin-left: 12px;
             font-weight: bold;
-            &-i{
+            &-small{
                 margin-right : 5%;
                 color:#7e7e7e;
+                font-size: 16px;
                 &-points{
-                    margin:0;
+                    margin : 0;
+                    color:#7e7e7e;
+                    font-size: 16px;
                 }
+            }
+            &-large{
+                font-size:large;
+                color:#7e7e7e;
+                margin-right : 5%;
             }
 
         }
@@ -222,7 +231,10 @@ header{
     flex-direction: column;
     padding : 20px;
     &__logo{
-        height : 30px;
+        fill : white;
+        width : 120px;
+        height: 20px;
+        margin-bottom: 20px;
     }
     &__p{
         color :white;
@@ -237,4 +249,68 @@ header{
 
 .fa-handshake{
     margin-right: 5px;
+}
+
+
+/*Media*/
+@media(max-width:350px){
+    .restaurant__nouveau{
+        font-size: small;
+    }
+}
+
+
+@media(min-width : 480px) and (max-width : 778px){
+    .restaurant__nouveau{
+        font-size: large;
+        margin-left: 75%;
+    }
+}
+
+@media(min-width : 778px) and (max-width : 1050px){
+    .restaurant__nouveau{
+        font-size: large;
+        margin-left: 80%;
+    }
+}
+
+
+
+@media(min-width : 1050px){
+    
+    .footer{
+        flex-direction: row;
+        height: 160px;
+        padding-top: 40px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &__logo{
+            width : 100%;
+        }
+    }
+
+    .restaurants{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 10%;
+        &__title{
+            width : 100%;
+        }
+    }
+    .restaurant{
+        width : 100%;
+        margin : 0;
+        margin-bottom: 40px;
+        &__title{
+            width : 100%;
+        }
+        &__nouveau{
+            font-size: normal;
+            margin-left: 30%;
+        }
+     }
+     .linkRestaurant{
+         width: 45%;
+     }
+    
 }

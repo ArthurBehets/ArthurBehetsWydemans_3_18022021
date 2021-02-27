@@ -28,7 +28,7 @@ header {
   flex-direction: column;
 }
 header .header__img {
-  width: 40%;
+  width: 45%;
   margin: auto;
 }
 
@@ -40,7 +40,7 @@ header .header__img {
   width: 100%;
   margin-top: 40px;
   height: 50px;
-  box-shadow: 0px -3px 0 3px linear-gradient(black, #eaeaea);
+  box-shadow: 0px -2px 0 2px rgba(0, 0, 0, 0.1);
 }
 .localisation__icon {
   margin-top: auto;
@@ -81,13 +81,12 @@ header .header__img {
   font-size: x-large;
   color: white;
   padding: 30px;
-  padding-bottom: 5px;
-  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-top: 17px;
   border-radius: 60px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  height: 50px;
   margin-bottom: 70px;
 }
 
@@ -97,9 +96,11 @@ header .header__img {
   flex-direction: column;
   margin: 15px;
   margin-bottom: 75px;
+  margin-left: 10%;
 }
 .utilisation__title {
   font-size: 25px;
+  width: 100%;
 }
 .utilisation__link {
   display: flex;
@@ -112,17 +113,25 @@ header .header__img {
   box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
   padding: 17px;
   border-radius: 12px;
-  width: 80%;
+  width: 83%;
   text-align: center;
   margin-left: 12px;
   font-weight: bold;
 }
-.utilisation__link__p-i {
+.utilisation__link__p-small {
   margin-right: 5%;
   color: #7e7e7e;
+  font-size: 16px;
 }
-.utilisation__link__p-i-points {
+.utilisation__link__p-small-points {
   margin: 0;
+  color: #7e7e7e;
+  font-size: 16px;
+}
+.utilisation__link__p-large {
+  font-size: large;
+  color: #7e7e7e;
+  margin-right: 5%;
 }
 .utilisation__link__number {
   background-color: #9356DC;
@@ -212,7 +221,10 @@ header .header__img {
   padding: 20px;
 }
 .footer__logo {
-  height: 30px;
+  fill: white;
+  width: 120px;
+  height: 20px;
+  margin-bottom: 20px;
 }
 .footer__p {
   color: white;
@@ -226,6 +238,63 @@ header .header__img {
 
 .fa-handshake {
   margin-right: 5px;
+}
+
+/*Media*/
+@media (max-width: 350px) {
+  .restaurant__nouveau {
+    font-size: small;
+  }
+}
+@media (min-width: 480px) and (max-width: 778px) {
+  .restaurant__nouveau {
+    font-size: large;
+    margin-left: 75%;
+  }
+}
+@media (min-width: 778px) and (max-width: 1050px) {
+  .restaurant__nouveau {
+    font-size: large;
+    margin-left: 80%;
+  }
+}
+@media (min-width: 1050px) {
+  .footer {
+    flex-direction: row;
+    height: 160px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer__logo {
+    width: 100%;
+  }
+
+  .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
+  }
+  .restaurants__title {
+    width: 100%;
+  }
+
+  .restaurant {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .restaurant__title {
+    width: 100%;
+  }
+  .restaurant__nouveau {
+    font-size: normal;
+    margin-left: 30%;
+  }
+
+  .linkRestaurant {
+    width: 45%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
