@@ -53,14 +53,16 @@ h1, h2, h3, h4, h5 {
   z-index: 2;
   position: absolute;
   width: 100%;
-  height: 1675px;
+  height: 1700px;
   display: flex;
   flex-direction: column;
 }
 .plates__title {
   display: flex;
   font-style: italic;
+  font-weight: bolder;
   margin-left: 10%;
+  font-size: xx-large;
 }
 .plates__title-i {
   margin-top: 22px;
@@ -105,8 +107,15 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 .plateCategory__title {
-  font-weight: normal;
+  font-size: large;
   color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+}
+.plateCategory__title__bar {
+  margin: 0;
+  border-top: 3.5px solid #99E2D0;
+  width: 40px;
 }
 .plateCategory__infos {
   background-color: white;
@@ -125,6 +134,7 @@ h1, h2, h3, h4, h5 {
 .plateCategory__infos-p-prize {
   background: none;
   margin-right: 5%;
+  margin-left: 5%;
 }
 .plateCategory__infos-title {
   font-size: 20px;
@@ -137,7 +147,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin-top: 1625px;
+  margin-top: 1650px;
 }
 .footer__logo {
   fill: white;
@@ -169,11 +179,11 @@ h1, h2, h3, h4, h5 {
   }
 
   .plates {
-    height: 1700px;
+    height: 1750px;
   }
 
   .footer {
-    margin-top: 1650px;
+    margin-top: 1700px;
   }
 }
 @media (min-width: 480px) and (max-width: 778px) {

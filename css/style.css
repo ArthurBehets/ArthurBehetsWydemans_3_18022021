@@ -118,6 +118,18 @@ header .header__img {
   margin-left: 12px;
   font-weight: bold;
 }
+.utilisation__link__p:hover {
+  background-color: #f5edff;
+}
+.utilisation__link__p:hover .utilisation__link__p-small {
+  color: #9356DC;
+}
+.utilisation__link__p:hover .utilisation__link__p-large {
+  color: #9356DC;
+}
+.utilisation__link__p:hover .utilisation__link__p-small-points {
+  color: #9356DC;
+}
 .utilisation__link__p-small {
   margin-right: 5%;
   color: #7e7e7e;
@@ -151,7 +163,7 @@ header .header__img {
   flex-direction: column;
 }
 .restaurants h2 {
-  margin-left: 15px;
+  margin-left: 10%;
 }
 
 .restaurant {
@@ -277,6 +289,7 @@ header .header__img {
   }
   .restaurants__title {
     width: 100%;
+    margin-left: 0;
   }
 
   .restaurant {

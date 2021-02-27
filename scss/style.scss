@@ -122,6 +122,18 @@ header{
             text-align: center;
             margin-left: 12px;
             font-weight: bold;
+            &:hover{
+                background-color: #f5edff;
+                & .utilisation__link__p-small{
+                    color : $primary;
+                }
+                & .utilisation__link__p-large{
+                    color : $primary;
+                }
+                & .utilisation__link__p-small-points{
+                    color : $primary;
+                }
+            }
             &-small{
                 margin-right : 5%;
                 color:#7e7e7e;
@@ -159,7 +171,7 @@ header{
     display: flex;
     flex-direction: column;
     & h2{
-        margin-left: 15px;
+        margin-left : 10%;
     }
 }
 
@@ -295,6 +307,7 @@ header{
         padding-left: 10%;
         &__title{
             width : 100%;
+            margin-left: 0;
         }
     }
     .restaurant{
