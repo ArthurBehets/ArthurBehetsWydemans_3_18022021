@@ -22,8 +22,81 @@ body{
 h1, h2, h3, h4, h5{
     font-family: roboto;
 }
+/*---------------------------------------------------------------------------------*/
+/*Animation*/
+/*Charging bar*/
 
 
+
+
+
+
+
+/*-------------------------------------*/
+/*Apparition*/
+
+.entrance{
+    animation: apparition  500ms;
+}
+.plate{
+    animation: apparition 1000ms;
+}
+.dessert{
+    animation : apparition 1500ms;
+}
+
+@keyframes apparition{
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*-------------------------------------*/
+/*Check*/
+.plateCategory__choice:active .plateCategory__choice__infos{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.plateCategory__choice:active .checkAnimation{
+    animation: sliding 1000ms linear;
+    animation-fill-mode: forwards;
+    transform-origin: right;
+}
+
+@keyframes sliding{
+    0%{
+        width : 0%;
+    }
+
+    100%{
+        width : 20%;
+      }
+}
+
+.plateCategory__choice:active .checkAnimation__icon{
+    animation: checkRotate 1000ms linear;
+}
+
+@keyframes checkRotate{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/*-------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
 
 
 /*Header */
@@ -58,7 +131,7 @@ h1, h2, h3, h4, h5{
         z-index: 1;
     }
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 /* Plates */ 
 
 .plates{
@@ -120,6 +193,7 @@ h1, h2, h3, h4, h5{
     margin-left: 7%;
     justify-content: space-between;
     width: 90%;
+    height: 100%;
     &__title{
         font-size: large;
         color: #1e1e1e;
@@ -133,31 +207,54 @@ h1, h2, h3, h4, h5{
             margin-left: 1%;
         }
     }
-    &__infos{
+    &__choice{
         background-color: white;
-        display: flex;
-        flex-direction: column;
-        padding-left : 5%;
         border-radius: 20px;
-        width : 90%;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        display : flex;
+        flex-direction: row;
         justify-content: space-between;
-        &-p{
+        &__infos{
             display: flex;
+            flex-direction: column;
+            padding-left : 5%; 
+            width : 90%;
             justify-content: space-between;
-            &-prize{
-                background: none;
-                margin-right: 5%;
-                margin-left: 5%;
+            &-p{
+                display: flex;
+                justify-content: space-between;
+                &-prize{
+                    background: none;
+                    margin-right: 5%;
+                    margin-left: 5%;
+                }
             }
-        }
-        &-title{
-            font-size: 20px;
-            margin-bottom: 0;
+            &-title{
+                font-size: 20px;
+                margin-bottom: 0;
+            }
         }
     }
 }
 
+.checkAnimation{
+    width : 0%;
+    overflow: hidden;
+    border-radius: 0 20px 20px 0;
+    background-color: $third;
+    &__icon{
+        border-radius: 40px;
+        background-color: white;
+        padding : 5px;
+        font-size: 25px;
+        overflow: hidden;
+        margin-left: 35%;
+        margin-top : 32px;
+        color: $third;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
 /* footer */
 
 .footer{
@@ -207,6 +304,8 @@ h1, h2, h3, h4, h5{
     margin-right: 5px;
 }
 
+
+/*--------------------------------------------------------------------------------------------------*/
 /*Media*/
 
 @media(max-width:275px){

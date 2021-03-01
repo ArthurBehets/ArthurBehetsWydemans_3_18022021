@@ -26,7 +26,75 @@ h1{
 }
 
 /* Main version (smartphone) */
+/*Charging*/
+.charge{
+    position : absolute;
+    right : 42%;
+    top : 50%;
+    display: flex;
+    justify-content: space-between;
+    width : 15%;
+    
+    &__bar{
+        background-color: $third;
+        width : 10%;
+        height: 100px;
+        animation : waves 1700ms;
+        animation-fill-mode: forwards;
+    }
+}
 
+
+.two{
+    
+    animation-delay: 200ms;
+}
+.three{
+    
+    animation-delay: 400ms;
+}
+.four{
+    
+    animation-delay: 600ms;
+}
+
+@keyframes waves{
+    25%{
+        transform: scale(1,0.75);
+    }
+    50%{
+        transform: scale(1,0.50);
+    }
+    75%{
+        transform: scale(1,0.75);
+        opacity: 1;
+    }
+    99%{
+        transform: scale(1,1);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
+/*Animation*/
+.delayedBody{
+    animation: delayed 2500ms;
+}
+@keyframes delayed{
+    0%{
+        opacity : 0;
+    }
+    90%{
+        opacity : 0;
+    }
+    100%{
+        opacity : 1;
+    }
+}
 /*Header*/
 
 header{
