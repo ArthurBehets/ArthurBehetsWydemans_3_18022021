@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss/style.scss css/style.css && --watch scss/restaurant.scss css/restaurant.css"
+    "sass": "sass --watch scss/style.scss:css/style.css scss/restaurant.scss:css/restaurant.css"
   },
   "repository": {
     "type": "git",
