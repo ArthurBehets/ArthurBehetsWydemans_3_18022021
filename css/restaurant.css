@@ -121,13 +121,13 @@ h1, h2, h3, h4, h5 {
 .plates {
   background-color: #f6f6f6;
   border-radius: 60px 60px 0 0;
-  margin-top: -50px;
   z-index: 2;
   position: relative;
   margin-top: 300px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .plates__title {
   display: flex;
@@ -177,7 +177,8 @@ h1, h2, h3, h4, h5 {
   margin-left: 7%;
   justify-content: space-between;
   width: 90%;
-  height: 100%;
+  margin-bottom: 40px;
+  position: static;
 }
 .plateCategory__title {
   font-size: large;
@@ -338,11 +339,10 @@ h1, h2, h3, h4, h5 {
   .plates {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 1100px;
   }
   .plates__title {
     width: 100%;
-    height: 30px;
+    height: 80px;
   }
   .plates__link {
     margin-top: 390px;
@@ -351,8 +351,8 @@ h1, h2, h3, h4, h5 {
   }
 
   .plateCategory {
+    justify-content: start;
     width: 40%;
-    height: 400px;
   }
 
   .dessert {
