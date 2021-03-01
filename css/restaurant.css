@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   font-style: italic;
   font-weight: bolder;
-  margin-left: 10%;
+  margin-left: 7%;
   font-size: xx-large;
 }
 .plates__title-i {
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5 {
 .plateCategory {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-left: 7%;
   justify-content: space-between;
   width: 90%;
 }
@@ -172,6 +172,24 @@ h1, h2, h3, h4, h5 {
   margin-right: 5px;
 }
 
+/*Media*/
+@media (max-width: 380px) {
+  .header__div__link {
+    margin-right: 15%;
+  }
+
+  .header__div__logo {
+    height: 35px;
+  }
+
+  .plates {
+    height: 1850px;
+  }
+
+  .footer {
+    margin-top: 1800px;
+  }
+}
 @media (max-width: 380px) {
   .header__div__link {
     margin-right: 15%;
@@ -206,7 +224,7 @@ h1, h2, h3, h4, h5 {
   }
   .plates__link {
     margin-top: 390px;
-    margin-left: 10%;
+    margin-left: 7%;
     margin-bottom: 0;
   }
 
