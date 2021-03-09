@@ -162,6 +162,9 @@ header{
         margin-right: auto;
         text-align: center;
         margin-bottom: 70px;
+        &:hover{
+            box-shadow: 2px 3px 2px lighten($primary,15%);
+        }
     }
 }
 /* Utilisation part */
@@ -202,6 +205,9 @@ header{
                 & .utilisation__link__p-small-points{
                     color : $primary;
                 }
+                & .iconeMenu{
+                    fill : $primary;
+                }
             }
             &-small{
                 margin-right : 5%;
@@ -214,7 +220,7 @@ header{
                 }
             }
             &-large{
-                font-size:large;
+                font-size:larger;
                 color:#7e7e7e;
                 margin-right : 5%;
             }
@@ -232,7 +238,12 @@ header{
         }
     }
 }
-
+.iconeMenu{
+    fill:#7e7e7e;
+    margin-right : 5%;
+    width : 20px;
+    height: 20px;
+}
 /* Restaurants */ 
 
 .restaurants{
@@ -326,6 +337,7 @@ header{
         flex-direction: row;
         width: 20%;
         margin-left: 5%;
+        white-space: nowrap;
         &-i{
             margin-right: 10px;
             font-size : 15px;

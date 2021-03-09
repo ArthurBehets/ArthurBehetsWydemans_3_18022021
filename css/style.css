@@ -152,6 +152,9 @@ header .header__img {
   text-align: center;
   margin-bottom: 70px;
 }
+.intro__link:hover {
+  box-shadow: 2px 3px 2px #bc95e9;
+}
 
 /* Utilisation part */
 .utilisation {
@@ -194,6 +197,9 @@ header .header__img {
 .utilisation__link__p:hover .utilisation__link__p-small-points {
   color: #9356DC;
 }
+.utilisation__link__p:hover .iconeMenu {
+  fill: #9356DC;
+}
 .utilisation__link__p-small {
   margin-right: 5%;
   color: #7e7e7e;
@@ -205,7 +211,7 @@ header .header__img {
   font-size: 16px;
 }
 .utilisation__link__p-large {
-  font-size: large;
+  font-size: larger;
   color: #7e7e7e;
   margin-right: 5%;
 }
@@ -218,6 +224,13 @@ header .header__img {
   padding-right: 10px;
   border-radius: 20px;
   color: white;
+}
+
+.iconeMenu {
+  fill: #7e7e7e;
+  margin-right: 5%;
+  width: 20px;
+  height: 20px;
 }
 
 /* Restaurants */
@@ -309,6 +322,7 @@ header .header__img {
   flex-direction: row;
   width: 20%;
   margin-left: 5%;
+  white-space: nowrap;
 }
 .footer__p-i {
   margin-right: 10px;

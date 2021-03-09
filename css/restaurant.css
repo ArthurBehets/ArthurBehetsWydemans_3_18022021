@@ -53,7 +53,6 @@ h1, h2, h3, h4, h5 {
 /*Check*/
 .plateCategory__choice:active .plateCategory__choice__infos {
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -137,10 +136,10 @@ h1, h2, h3, h4, h5 {
   font-size: xx-large;
 }
 .plates__title-i {
-  margin-top: 22px;
+  margin-top: 33px;
   font-size: 25px;
   position: absolute;
-  margin-left: 70%;
+  margin-left: 75%;
   z-index: 1;
 }
 .plates__title-i:active {
@@ -164,6 +163,9 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   height: 30px;
   margin-bottom: 70px;
+}
+.plates__link:hover {
+  box-shadow: 2px 3px 2px #bc95e9;
 }
 
 .hidden {
@@ -211,6 +213,8 @@ h1, h2, h3, h4, h5 {
 .plateCategory__choice__infos-p {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plateCategory__choice__infos-p-prize {
   background: none;
@@ -220,6 +224,8 @@ h1, h2, h3, h4, h5 {
 .plateCategory__choice__infos-title {
   font-size: 20px;
   margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .checkAnimation {
@@ -260,6 +266,7 @@ h1, h2, h3, h4, h5 {
   flex-direction: row;
   width: 20%;
   margin-left: 5%;
+  white-space: nowrap;
 }
 .footer__p-i {
   margin-right: 10px;

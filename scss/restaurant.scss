@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5{
 /*Check*/
 .plateCategory__choice:active .plateCategory__choice__infos{
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -151,10 +150,10 @@ h1, h2, h3, h4, h5{
         margin-left: 7%;
         font-size: xx-large;
         &-i{
-            margin-top: 22px;
+            margin-top: 33px;
             font-size: 25px;
             position: absolute;
-            margin-left: 70%;
+            margin-left: 75%;
             z-index: 1;
             &:active{
                 background : linear-gradient(to bottom right, $primary, $secondary);
@@ -179,6 +178,9 @@ h1, h2, h3, h4, h5{
         text-align: center;
         height :30px;
         margin-bottom: 70px;
+        &:hover{
+            box-shadow: 2px 3px 2px lighten($primary,15%);
+        }
     }
 }
 
@@ -224,6 +226,8 @@ h1, h2, h3, h4, h5{
             &-p{
                 display: flex;
                 justify-content: space-between;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 &-prize{
                     background: none;
                     margin-right: 5%;
@@ -233,6 +237,8 @@ h1, h2, h3, h4, h5{
             &-title{
                 font-size: 20px;
                 margin-bottom: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
         }
     }
@@ -276,6 +282,7 @@ h1, h2, h3, h4, h5{
         flex-direction: row;
         width: 20%;
         margin-left: 5%;
+        white-space: nowrap;
         &-i{
             margin-right: 10px;
             font-size : 15px;
